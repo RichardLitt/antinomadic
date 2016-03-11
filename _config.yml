@@ -18,7 +18,7 @@ author :
   name : Antinomadic
   email : richard@burntfen.com
   github : RichardLitt
-  twitter : RichLitt
+  twitter : richlitt
   #feedburner : feedname
 
 collections:
@@ -107,7 +107,7 @@ JB :
   analytics :
     provider : google
     google :
-        tracking_id : 'UA-4124866-15'
+        tracking_id : 'UA-4124866-34'
     #getclicky :
       #site_id :
     #mixpanel :
