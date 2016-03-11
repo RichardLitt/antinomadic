@@ -1,6 +1,24 @@
 $leftPadding: 15px;
 
 #index {
+  .banner {
+    background-image: url(/assets/img/licata.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: $white;
+    text-align: center;
+    .banner-title {
+      padding-top: 150px;
+      font-size: 4em;
+    }
+    .banner-tagline {
+      font-size: 2em;
+      color: $white;
+    }
+  }
+
   h1 {
     font-size: 2em;
     margin: 10% 0 0 $leftPadding;
