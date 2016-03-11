@@ -203,9 +203,7 @@ a {
   border-bottom: 1px thick #33666;
 }
 
-
-
-#project-page {
+#author-page {
   .project-image {
     max-width: 100%;
     border-radius: 50%;
@@ -251,12 +249,17 @@ a {
       padding-top: 10px;
     }
   }
-  #project-page {
-    h4 {
+  #author-page {
+    h1 {
+      text-align: center;
       margin-top: 20px;
     }
+    p {
+      font-size: 1.2em;
+    }
     .project-image {
-      max-width: 300px;
+      max-width: 200px;
+      margin: 20px auto;
     }
   }
 }

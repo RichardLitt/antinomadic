@@ -2,7 +2,7 @@
   <h1 class="project-page-title">{{ page.full_name }}</h1>
 </a>
 
-<div id="project-page" class="container-fluid">
+<div id="author-page" class="container-fluid">
   <div class="row-fluid">
     <div class="col-sm-4">
       <a href="{{ page.outbound }}">
@@ -13,17 +13,18 @@
       {{ content }}
       <hr />
       <div class='social-media'>
+        <a href="{{ page.outbound }}"><i class="fa fa-globe" title="Website"></i></a>
         {% if page.email %}
-          <a href="mailto:{{ page.email }}"><i class="fa fa-envelope"></i></a>
+          <a href="mailto:{{ page.email }}"><i class="fa fa-envelope" title="Email"></i></a>
         {% endif %}
         {% if page.twitter %}
-        <a href="https://twitter.com/{{ page.twitter }}"><i class="fa fa-twitter"></i></a>
+        <a href="https://twitter.com/{{ page.twitter }}"><i class="fa fa-twitter" title="Twitter"></i></a>
         {% endif %}
         {% if page.medium %}
-        <a href="https://medium.com/@{{ page.medium }}"><i class="fa fa-medium"></i></a>
+        <a href="https://medium.com/@{{ page.medium }}"><i class="fa fa-medium" title="Medium"></i></a>
         {% endif %}
         {% if page.instagram %}
-        <a href="https://instagram.com/{{ page.instagram }}/"><i class="fa fa-instagram"></i></a>
+        <a href="https://instagram.com/{{ page.instagram }}/"><i class="fa fa-instagram" title="Instagram"></i></a>
         {% endif %}
       </div>
     </div>
