@@ -91,11 +91,11 @@
                 {% for author in site.authors %}
                   <div class="col-xs-6 col-sm-6 col-md-6">
                       <div class="img-container" style="max-width: 60%; margin: 0px auto;">
-                        <a href="{{BASE_PATH}}/{{ author.url }}">
+                        <a href="{{BASE_PATH}}{{ author.url }}">
                           <img src="{{BASE_PATH}}/assets/img/authors/{{ author.image }}" style="border-radius: 50%" class="card-image"/>
                         </a>
                       </div>
-                      <a class="project-title" href="{{BASE_PATH}}/{{ author.url }}">
+                      <a class="project-title" href="{{ BASE_PATH }}{{ author.url }}">
                         <h4>
                           {{ author.name }}
                         </h4>
@@ -108,7 +108,7 @@
           </div>
           <footer>
             <p>{{ site.author.name }} &copy; <script type="text/javascript">document.write(new Date().getFullYear())</script>.
-              <a href="https://github.com/RichardLitt/richardlitt.github.com" style="color:#FFF;">Source</a>.
+              <a href="https://github.com/RichardLitt/antinomadic" style="color:#FFF;">Source</a>.
             </p>
           </footer>
         </div>
