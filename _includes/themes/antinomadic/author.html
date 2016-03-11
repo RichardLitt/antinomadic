@@ -11,6 +11,21 @@
     </div>
     <div class="col-sm-8">
       {{ content }}
+      <hr />
+      <div class='social-media'>
+        {% if page.email %}
+          <a href="mailto:{{ page.email }}"><i class="fa fa-envelope"></i></a>
+        {% endif %}
+        {% if page.twitter %}
+        <a href="https://twitter.com/{{ page.twitter }}"><i class="fa fa-twitter"></i></a>
+        {% endif %}
+        {% if page.medium %}
+        <a href="https://medium.com/@{{ page.medium }}"><i class="fa fa-medium"></i></a>
+        {% endif %}
+        {% if page.instagram %}
+        <a href="https://instagram.com/{{ page.instagram }}/"><i class="fa fa-instagram"></i></a>
+        {% endif %}
+      </div>
     </div>
     <hr>
   </div>
