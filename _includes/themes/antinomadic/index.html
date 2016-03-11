@@ -91,11 +91,11 @@
                 {% for author in site.authors %}
                   <div class="col-xs-6 col-sm-6 col-md-6">
                       <div class="img-container" style="max-width: 60%; margin: 0px auto;">
-                        <a href="{{ author.url }}">
-                          <img src="assets/img/authors/{{ author.image }}" style="border-radius: 50%" class="card-image"/>
+                        <a href="{{BASE_PATH}}{{ author.url }}">
+                          <img src="{{BASE_PATH}}assets/img/authors/{{ author.image }}" style="border-radius: 50%" class="card-image"/>
                         </a>
                       </div>
-                      <a class="project-title" href="{{ author.url }}">
+                      <a class="project-title" href="{{BASE_PATH}}{{ author.url }}">
                         <h4>
                           {{ author.name }}
                         </h4>
