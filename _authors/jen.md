@@ -1,6 +1,8 @@
 ---
 layout: author
-name: "Jen Kinney"
+collection: authors
+name: jen
+full_name: "Jen Kinney"
 image: jen.jpg
 outbound: http://jakinney.com
 ---

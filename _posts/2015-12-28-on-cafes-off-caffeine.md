@@ -2,7 +2,7 @@
 layout: post
 title: "On Cafes, Off Caffeine"
 category: post
-author: Richard
+author: Richard Littauer
 tags: []
 date: 2015-12-28-19-54
 ---

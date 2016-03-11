@@ -2,7 +2,7 @@
 layout: post
 title: "Familiar Ceilings"
 category: post
-author: Richard
+author: Richard Littauer
 tags: []
 date: 2015-11-28-16-20
 ---

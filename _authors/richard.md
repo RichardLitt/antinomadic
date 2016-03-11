@@ -1,6 +1,8 @@
 ---
 layout: author
-name: "Richard Littauer"
+collection: authors
+name: richard
+full_name: "Richard Littauer"
 image: richard.jpg
 outbound: http://burntfen.com
 ---

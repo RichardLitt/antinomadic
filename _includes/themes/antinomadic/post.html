@@ -1,14 +1,21 @@
-<div class="page-header">
+  <div class="page-header">
   <h1>{{ page.title }}</h1>
   <div class='author-section' style="height:70px; margin: 20px 0px 20px 30px; border-bottom: 1px solid #999;">
+    {% assign name = page.author %}
+    {% for author in site.authors %}
+      {% if author.full_name == name %}
     <div class="image-container" style="float:left; margin-right:20px;">
-      <img src="{{ BASE_PATH }}/assets/img/authors/{{ page.author }}.jpg " style="height:50px;border-radius:50%;"/>
+      <a href="{{ BASE_PATH }}/author/{{ author.name }}">
+        <img src="{{ BASE_PATH }}/assets/img/authors/{{ author.image }}" style="height:50px;border-radius:50%;"/>
+      </a>
     </div>
-    <div class="author-stuff" style="position:relative;">
-    <p>
-      Written by <a href="{{ BASE_PATH }}/author/{{ page.author }}">{{ page.author }}</a><br />
+    <div class="author-stuff" style="float:left;">
+    <p style="margin-top: 0px;">
+      Written by <a href="{{ BASE_PATH }}/author/{{ author.name }}">{{ page.author }}</a><br />
       Published <i>{{ page.date | date_to_long_string }}</i>
     </p>
+      {% endif %}
+    {% endfor %}
   </div>
 </div>
 
@@ -18,17 +25,17 @@
       {{ content }}
       <hr>
       <div class="pagination">
-        <ul>
+        <ul style="list-style: none;">
         {% if page.previous %}
-          <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+          <li class="prev" style="display: inline;"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
         {% else %}
-          <li class="prev disabled"><a>&larr; Previous</a></li>
+          <!-- li class="prev disabled" style="display: inline;"><a>&larr; Previous</a></li> -->
         {% endif %}
-          <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+          <li style="display: inline;"><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Archive&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
         {% if page.next %}
-          <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+          <li class="next" style="display: inline;"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
         {% else %}
-          <li class="next disabled"><a>Next &rarr;</a>
+          <!-- li class="next disabled" style="display: inline;"><a>Next &rarr;</a> -->
         {% endif %}
         </ul>
       </div>

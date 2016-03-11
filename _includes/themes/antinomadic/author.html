@@ -1,12 +1,12 @@
 <a href="{{ page.outbound }}">
-  <h1 class="project-page-title">{{ page.name }}</h1>
+  <h1 class="project-page-title">{{ page.full_name }}</h1>
 </a>
 
 <div id="project-page" class="container-fluid">
   <div class="row-fluid">
     <div class="col-sm-4">
       <a href="{{ page.outbound }}">
-        <img class="project-image" {{ BASE_PATH}}/assets/img/authors/{{ page.image }}" />
+        <img class="project-image" src="{{ BASE_PATH}}/assets/img/authors/{{ page.image }}" />
       </a>
     </div>
     <div class="col-sm-8">
