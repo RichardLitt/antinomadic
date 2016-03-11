@@ -273,3 +273,15 @@ a {
 }
 
 $white: #FFF;
+
+.social-media {
+  margin: 3% 0;
+}
+.social-media a {
+  padding: 0 20px 0 0;
+  color: #000;
+  font-size: 20px;
+}
+.social-media a:hover, .social-media a:visited {
+  text-decoration: none;
+}
