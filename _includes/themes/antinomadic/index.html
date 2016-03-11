@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="copyright" content="&copy; {{ site.author.name }} 2015">
+    <meta name="description" content="My personal website, where I list all of my main projects and occasionally blog.">
+
+    <meta name="google-site-verification" content="8QqLkBKn1EYwbbAcD3TzbJpc8Zgni2mRuEhnlUeoGVg" />
+
+    <meta property="og:description" content="My personal website, where I list all of my main projects and occasionally blog." />
+    <meta property="og:url" content="http://burntfen.com/" />
+    <meta property="og:site_name" content="Richard Littauer" />
+    <meta property="og:title" content="Richard Littauer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://burntfen.com/assets/img/avatar.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="510" />
+    <meta property="og:image:height" content="515" />
+
+    <!-- Twitter: card tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@richlitt" />
+    <meta name="twitter:title" content="Richard Littauer">
+    <meta name="twitter:description" content="My personal website, where I list all of my main projects and occasionally blog.">
+    <meta name="twitter:image" content="http://burntfen.com/assets/img/avatar.png">
+
+    <!-- Open Source Protocol -->
+    <link rel="profile" href="http://osprotocol.com" />
+    <meta property="os:repo" content="https://github.com/RichardLitt/richardlitt.github.com" />
+    <meta property="os:rcs_type" content="git" />
+    <meta property="os:src" content="git@github.com:RichardLitt/richardlitt.github.com.git" />
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="{{ HOME_PATH }}assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="{{ HOME_PATH }}assets/css/custom.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon" href="{{ HOME_PATH }}images/touch-icon-iphone.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ HOME_PATH }}images/touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ HOME_PATH }}images/touch-icon-iphone-retina.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ HOME_PATH }}images/touch-icon-ipad-retina.png" />
+
+  </head>
+  <body id="index">
+    <div class="banner">
+      <p class='banner-title'>antinomadic</p>
+      <p class='banner-tagline'>exploring the mental cost of nomadism</p>
+    </div>
+    <div class="wrapper">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+
+          <div class="about" style="font-size: 1.5em; padding: 50px 0px;">
+            Antinomadic is an open journal by nomads. Here, in conversational passages, we are trying to get to the bottom of what nomadism means. We are interested in how movement changes us - our viewpoints, our values, our friendships, our thoughts - especially over long periods of time.
+          </div>
+
+          <hr style='width:50%;2px solid #eee'/>
+
+          <div class="posts" style="padding:100px 0px;">
+            {% for post in site.posts | sort: 'date' %}
+              <a href="{{ BASE_PATH }}{{ post.url }}" style="height: 50px;line-height:50px;">
+                <b>{{ post.title }}</b> - {{ post.author }}, {{post.date | date_to_string }}
+              </a><br />
+            {% endfor %}
+            <!-- <a class="more" href="/archive">More posts...</a> -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper" id="contact" >
+      <div class="container">
+          <div class="row col-md-12 press" >
+            <div class="authors">
+              <div class="row col-md-8 col-md-offset-2 projects" style="margin-bottom:100px;">
+
+                <h3 style="margin:50px 0px; text-align:center;">Authors</h3>
+                {% for author in site.authors %}
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                      <div class="img-container" style="max-width: 60%; margin: 0px auto;">
+                        <a href="{{ author.url }}">
+                          <img src="assets/img/authors/{{ author.image }}" style="border-radius: 50%" class="card-image"/>
+                        </a>
+                      </div>
+                      <a class="project-title" href="{{ author.url }}">
+                        <h4>
+                          {{ author.name }}
+                        </h4>
+                      </a>
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <footer>
+            <p>{{ site.author.name }} &copy; <script type="text/javascript">document.write(new Date().getFullYear())</script>.
+              <a href="https://github.com/RichardLitt/richardlitt.github.com" style="color:#FFF;">Source</a>.
+            </p>
+          </footer>
+        </div>
+      <div class="push"></div>
+
+
+    </div> <!-- /container -->
+
+  </div> <!-- /wrapper -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+    {% include JB/analytics %}
+
+  </body>
+</html>
