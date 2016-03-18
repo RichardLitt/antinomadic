@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My Ideal Day"
+title: "An incomplete history of wanting it both ways"
 category: posts
 author: Jen Kinney
 tags: []

@@ -6,6 +6,7 @@ author: Richard Littauer
 tags: []
 date: 2015-12-28-19-54
 ---
+{% include JB/setup %}
 
 I walked into the cafe, undoing my scarf as I opened the door. Diesel is one of three cafes in the Cambridge/Somerville area (that I know about) operated by the same company. They each have their own distinctive style; Forge is light, airy, and appeals more to people who like browsing for coffee accoutrements (using that word, most likely); Bloc 11 is set in an old bank and didn’t check where the name might have come from; and Diesel is filled with industrial furnishings, with reclaimed wood for the stand-up sections at the back. It is a bit dark, and always full of people. Today was no different.
 
