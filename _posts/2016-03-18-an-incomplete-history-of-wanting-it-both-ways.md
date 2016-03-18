@@ -8,8 +8,6 @@ date: 2016-03-18-16-08
 ---
 {% include JB/setup %}
 
-> The beginnings of an incomplete history of wanting it both ways
-
 In the morning of my ideal day, I wake up early. I stay in bed smiling, half awake, letting my mind play out the phantom ends of lingering visions. I meditate for thirty minutes, an hour. I write in a notebook, read a poem, sound a bell, brew a cup of tea.
  
 Somewhere nearby there’s an ocean. Somewhere there’s a damp forest. I watch the wind catpaw the water and scout the ground for treasures: bone, shell, edible stalks.
