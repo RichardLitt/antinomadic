@@ -2,17 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="{{ site.author.name }}">
-    <meta name="copyright" content="&copy; {{ site.author.name }} 2016">
-    <meta name="description" content="Exploring what it is to be a nomad.">
-
-    <meta property="og:description" content="Exploring what it is to be a nomad." />
-    <meta property="og:url" content="http://antinomadic.com/" />
-    <meta property="og:site_name" content="Antinomadic" />
+    {% if page.title %}
+    <title>{{ page.title }}</title>
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta name="twitter:title" content="{{ page.title }}">
+    {% else %}
+    <title>Antinomadic</title>
     <meta property="og:title" content="Antinomadic" />
+    <meta name="twitter:title" content="Antinomadic">
+    {% endif %}
+
+    {% if page.description %}
+      <meta name="description" content="{{ page.description }}">
+      <meta property="og:description" content="{{ page.description }}" />
+      <meta name="twitter:description" content="{{ page.description }}">
+    {% elsif page.title and page.author %}
+      <meta name="description" content="A new post by {{ page.author }} on Antinomadic">
+      <meta property="og:description" content="A new post by {{ page.author }} on Antinomadic">
+      <meta name="twitter:description" content="A new post by {{ page.author }} on Antinomadic">
+    {% else %}
+      <meta property="og:description" content="Exploring what it is to be a nomad.">
+      <meta name="twitter:description" content="Exploring what it is to be a nomad.">
+      <meta name="description" content="Exploring what it is to be a nomad.">
+    {% endif %}
+
+    {% if page.author %}
+    <meta name="author" content="{{ page.author }}">
+    <meta name="copyright" content="&copy; {{ page.author }} 2016">
+    {% else %}
+    <meta name="copyright" content="&copy; {{ site.author.name }} 2016">
+    <meta name="author" content="{{ site.author.name }}">
+    {% endif %}
+
+    <meta property="og:url" content="{{ BASE_PATH }}{{ page.url }}" />
+    <meta property="og:site_name" content="Antinomadic" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="{{ BASE_PATH}}/assets/img/sf-card.jpg" />
     <meta property="og:image:type" content="image/jpg" />
@@ -21,9 +45,7 @@
 
     <!-- Twitter: card tags -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="http://antinomadic.com" />
-    <meta name="twitter:title" content="Antinomadic">
-    <meta name="twitter:description" content="Exploring what it is to be a nomad.">
+    <meta name="twitter:site" content="@richlitt" />
     <meta name="twitter:image" content="{{ BASE_PATH}}/assets/img/sf-card.jpg">
 
     <!-- Open Source Protocol -->

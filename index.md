@@ -1,6 +1,6 @@
 ---
 layout: index
-title: Richard's Bog
+title: Antinomadic
 tagline:
 ---
 {% include JB/setup %}
