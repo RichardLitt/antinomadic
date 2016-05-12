@@ -1,0 +1,15 @@
+---
+layout: post
+title: "This is a new post!"
+category: post
+author: Jen Kinney
+tags: []
+date: 2016-05-11-21-09
+---
+{% include JB/setup %}
+
+How I long to see
+among dawn flowers,
+the face of God.
+
+~ Basho
