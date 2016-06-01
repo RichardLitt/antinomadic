@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "On the permanence of couches"
-category: post
+category: guest post
 author: Christine Armbruster
 tags: []
 date: 2016-05-31-16-20

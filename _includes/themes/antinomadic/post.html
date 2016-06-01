@@ -16,6 +16,14 @@
     </p>
       {% endif %}
     {% endfor %}
+    {% if page.category == "guest post" %}
+      <!-- Remove me when guest posters have their own profiles -->
+      <div class="author-stuff" style="float:left;">
+        <p style="margin-top: 0px;">
+          Written by {{ page.author }}<br />
+          Published <i>{{ page.date | date_to_long_string }}</i>
+        </p>
+    {% endif %}
   </div>
 </div>
 
