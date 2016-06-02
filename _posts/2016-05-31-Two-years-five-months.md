@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "On the permanence of couches"
+title: "Two years, five months"
 category: guest post
 author: Christine Armbruster
 tags: []
