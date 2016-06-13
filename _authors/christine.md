@@ -3,7 +3,7 @@ layout: author
 collection: authors
 name: christine
 full_name: "Christine Armbruster"
-image: jen.jpg
+image: christine.jpg
 outbound: http://www.christinearmbruster.com/
 twitter: 
 instagram: armbrusterphoto
