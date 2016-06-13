@@ -1,13 +1,13 @@
 ---
 layout: author
 collection: authors
-name: jen
-full_name: "Jen Kinney"
+name: christine
+full_name: "Christine Armbruster"
 image: jen.jpg
-outbound: http://jakinney.com
-twitter: jkjenkinney
-instagram: jkjenkinney
-email: jkjenkinney@gmail.com
+outbound: http://www.christinearmbruster.com/
+twitter: 
+instagram: armbrusterphoto
+email: tahoe488@gmail.com 
 ---
 {% include JB/setup %}
 
