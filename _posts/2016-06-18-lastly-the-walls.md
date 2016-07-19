@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Last, only walls"
+title: "Lastly, the walls"
 category: posts
 author: Jen Kinney
 tags: []
