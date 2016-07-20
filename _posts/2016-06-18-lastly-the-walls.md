@@ -20,4 +20,4 @@ No I am certain I am ready to leave Seattle. I’m writing because when I got ho
 
 Some caveat feels called for here. Yes, I did meet people who will stay in my life for decades. I wasn’t a hermit. Friends came into my life here who have touched me deeply, and I trust they feel the same. But I’ve come to reckon with the fact that I am or can be a fairly closed person, and this environment — a cloudy city without a vibrant public life, where sudden, prolonged, unwarranted, unprovoked interactions with strangers are rare — has fed my introverted side. The revelation of my life in New York was the possibility that I could be one with the body politic, that I could be a member of a public that is loud, forceful, possessed with a purpose higher than self. The lesson of these west coast years has been self care, self love. I’m craving a return to the former while retaining the calm and reflection of the latter, but I’m also aware: just changing cities won’t fell those walls. 
 
-![alsostoop]({{site_url}}/assets/img/posts/2016-07-19/kinney_01.jpg)
+![alsostoop]({{site_url}}/assets/img/posts/2016-07-19-/kinney_01.jpg)
