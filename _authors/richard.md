@@ -5,7 +5,7 @@ name: richard
 full_name: "Richard Littauer"
 image: richard.jpg
 outbound: http://burntfen.com
-twitter: richlitt
+# twitter: richlitt
 instagram: richlittv3
 medium: richlitt
 email: richard.littauer+antinomadic@gmail.com
