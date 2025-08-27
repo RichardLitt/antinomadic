@@ -16,7 +16,7 @@ I keep thinking about these vestigial branches because they’ve intertwined in 
 
 The founder said one reason he’s come to see the project as valuable is the message young people are being sold. Brands, colleges, parents, gurus, all them them: take risks. Your 20’s are the best time to do so, to be entrepreneurs, to travel and be ambitious, to go out on a limb. 
 
-And they do, so many of us do, seeking the next and the bigger and the brighter. I thought of [your piece, Padmini](http://antinomadic.com/2016-08-23/delusional-nomad), and this question: why, when I like to stay, am I always leaving? Already just under a month here, when I think about what I would need to do to advance my career, most of my plans involve going somewhere else. I’ve already been down that road.
+And they do, so many of us do, seeking the next and the bigger and the brighter. I thought of [your piece, Padmini](https://richardlitt.github.io/antinomadic/2016-08-23/delusional-nomad), and this question: why, when I like to stay, am I always leaving? Already just under a month here, when I think about what I would need to do to advance my career, most of my plans involve going somewhere else. I’ve already been down that road.
 
 This founder summed up my experience pretty well. That risk-taking path leads at first to exhilaration, then often isolation, maybe demoralization, and its worst, desperation. The risk-takers have grown so tall so fast they can’t be supported by their own frail roots or spindly trunks.
 
